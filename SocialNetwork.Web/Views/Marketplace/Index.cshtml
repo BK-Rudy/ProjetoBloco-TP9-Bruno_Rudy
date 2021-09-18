@@ -1,0 +1,276 @@
+﻿@{
+    ViewData["Title"] = "Marketplace";
+}
+
+@section Scripts {
+<script src="~/lib/apexcharts/dist/apexcharts.min.js"></script>
+<script src="~/js/demo/dashboard.demo.js"></script>
+}
+
+<h1 class="page-header mb-3">
+    Bem vindo!   <small>Aqui você encontra tudo o que precisa para a sua igreja e fiéis!</small>
+</h1>
+
+<!-- BEGIN row -->
+<div class="row">
+    <!-- BEGIN col-6 -->
+    <div class="col-xl-6">
+        <!-- BEGIN card -->
+        <div class="card text-white-transparent-7 mb-3 overflow-hidden">
+            <!-- BEGIN card-img-overlay -->
+            <div class="card-img-overlay d-block d-lg-none bg-blue rounded"></div>
+            <!-- END card-img-overlay -->
+            <!-- BEGIN card-img-overlay -->
+            <div class="card-img-overlay d-none d-md-block bg-blue rounded" style="background-image: url(assets/img/bg/wave-bg.png); background-position: right bottom; background-repeat: no-repeat; background-size: 100%;"></div>
+            <!-- END card-img-overlay -->
+            <!-- BEGIN card-img-overlay -->
+            <div class="card-img-overlay d-none d-md-block bottom-0 top-auto">
+                <div class="row">
+                    <div class="col-md-8 col-xl-6"></div>
+                    <div class="col-md-4 col-xl-6 mb-n2">
+                        <img src="~/img/page/dashboard.svg" alt="" class="d-block ms-n3 mb-5" style="max-height: 310px" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END card-img-overlay -->
+    <!-- END col-6 -->
+    <!-- BEGIN col-6 -->
+    <div class="container">
+        <!-- BEGIN row -->
+        <div class="row justify-content-center">
+            <div class="d-flex align-items-center mb-4">
+                <div class="flex-grow-1">
+                    <h5 class="mb-1">MarketPlace</h5>
+                </div>
+            </div>
+
+            <!-- produto-1 -->
+            <div class="d-flex align-items-center mb-3">
+                <div class="d-flex align-items-center justify-content-center me-3 width-50 height-50">
+                    <img src="~/img/product/produto-1.jpg" alt="" class="ms-100 mh-100" />
+                </div>
+                <div class="flex-grow-1">
+                    <div>
+                        <div class="text-primary fs-10px font-weight-600">TOP SALES</div>
+                        <div class="text-dark font-weight-600"><a href="https://www.amazon.com.br/B%C3%ADblia-King-James-Atualizada-Marrom/dp/6581117021/ref=asc_df_6581117021/?tag=googleshopp00-20&linkCode=df0&hvadid=379727701162&hvpos=&hvnetw=g&hvrand=10371854740508056665&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001634&hvtargid=pla-922379603244&psc=1">Bíblia King James Slim - Marrom</a></div>
+                        <div class="fs-13px">R$24,40 - R$35,34</div>
+                    </div>
+                </div>
+                <div class="ps-3 text-center">
+                    <img src="~/img/product/amazon.png" alt="" height="40" class="ms-100 mh-100" />
+                </div>
+            </div>
+
+            <!-- produto-2 -->
+            <div class="d-flex align-items-center mb-3">
+                <div class="d-flex align-items-center justify-content-center me-3 width-50 height-50">
+                    <img src="~/img/product/produto-2.jpg" alt="" class="ms-100 mh-100" />
+                </div>
+                <div class="flex-grow-1">
+                    <div>
+                        <div class="text-dark font-weight-600"><a href="https://www.submarino.com.br/produto/3367935267?opn=XMLGOOGLE&sellerid=13480185000120">O Alcorão (Edição De Bolso)</a></div>
+                        <div class="fs-13px">R$32,58</div>
+                    </div>
+                </div>
+                <div class="ps-3 text-center">
+                    <img src="~/img/product/submarino.png" alt="" height="40" class="ms-100 mh-100" />
+                </div>
+            </div>
+
+            <!-- produto-3 -->
+            <div class="d-flex align-items-center mb-3">
+                <div class="d-flex align-items-center justify-content-center me-3 width-50 height-50">
+                    <img src="~/img/product/produto-4.jpg" alt="" class="ms-100 mh-100" />
+                </div>
+                <div class="flex-grow-1">
+                    <div>
+                        <div class="text-dark font-weight-600"><a href="https://www.magazineluiza.com.br/kit-10-un-sagrada-familia-15cm-divinario-artigos-religiosos/p/dkke86d35h/rc/rcnm/?&seller_id=divinarioartigosreligiosos&utm_source=google&utm_medium=pla&utm_campaign=&partner_id=54222&gclid=CjwKCAjw-ZCKBhBkEiwAM4qfF9wxpfk0rsNClnEvN1EQ-KBkbQLpzvJUYaDfMpGiNlpUROBzBSUv3RoCN-4QAvD_BwE&gclsrc=aw.ds">Kit 10 Un Sagrada Família 15cm</a></div>
+                        <div class="fs-13px">R$158,01</div>
+                    </div>
+                </div>
+                <div class="ps-3 text-center">
+                    <img src="~/img/product/magalu.png" alt="" height="40" class="ms-100 mh-100" />
+                </div>
+            </div>
+
+            <!-- produto-4 -->
+            <div class="d-flex align-items-center mb-3">
+                <div class="d-flex align-items-center justify-content-center me-3 width-50 height-50">
+                    <img src="~/img/product/produto-3.jpg" alt="" class="ms-100 mh-100" />
+                </div>
+                <div class="flex-grow-1">
+                    <div>
+                        <div class="text-dark font-weight-600"><a href="https://www.amazon.com.br/Ceticismo-f%C3%A9-D%C3%BAvida-Certeza-Distor%C3%A7%C3%A3o/dp/8582162073/ref=asc_df_8582162073/?tag=googleshopp00-20&linkCode=df0&hvadid=379749006424&hvpos=&hvnetw=g&hvrand=15943901189631868991&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001634&hvtargid=pla-810630906959&psc=1">O ceticismo da fé: Deus: uma dúvida, uma certeza, uma distorção</a></div>
+                        <div class="fs-13px">R$24,99 - R$43,99</div>
+                    </div>
+                </div>
+                <div class="ps-3 text-center">
+                    <img src="~/img/product/amazon.png" alt="" height="40" class="ms-100 mh-100" />
+                </div>
+            </div>
+
+            <!-- produto-5 -->
+            <div class="d-flex align-items-center mb-3">
+                <div class="d-flex align-items-center justify-content-center me-3 width-50 height-50">
+                    <img src="~/img/product/produto-5.jpg" alt="" class="ms-100 mh-100" />
+                </div>
+                <div class="flex-grow-1">
+                    <div>
+                        <div class="text-dark font-weight-600"><a href="https://www.amazon.com.br/que-%C3%89-Espiritismo-Allan-Kardec/dp/8573413913/ref=pd_sbs_1/132-2224523-3944667?pd_rd_w=KB1wr&pf_rd_p=a94e71ea-33bb-431c-ad4f-11f4e2decc0b&pf_rd_r=15PSBP4RE9FKNA4YSYKA&pd_rd_r=21a33d09-59d8-4c7a-981f-47c28ff61983&pd_rd_wg=srgDY&pd_rd_i=8573413913&psc=1">O que é o espiritismo - Allan Kardec</a></div>
+                        <div class="fs-13px">R$13,24 - R$17,29</div>
+                    </div>
+                </div>
+                <div class="ps-3 text-center">
+                    <img src="~/img/product/amazon.png" alt="" height="40" class="ms-100 mh-100" />
+                </div>
+            </div>
+
+            <!-- produto-6 -->
+            <div class="d-flex align-items-center mb-3">
+                <div class="d-flex align-items-center justify-content-center me-3 width-50 height-50">
+                    <img src="~/img/product/produto-6.jpg" alt="" class="ms-100 mh-100" />
+                </div>
+                <div class="flex-grow-1">
+                    <div>
+                        <div class="text-dark font-weight-600"><a href="https://www.americanas.com.br/produto/58728513?WT.srch=1&opn=YSMESP&sellerid=18552346000168&epar=bp_pl_00_go_mv_todas_geral_gmv&acc=e789ea56094489dffd798f86ff51c7a9&i=56f30ab2eec3dfb1f8ebb847&o=5c9c1bac6c28a3cb50917240&gclid=CjwKCAjw-ZCKBhBkEiwAM4qfFyXYb1PUZbkrIPBXGM4uyLc82tpGOhD05PJhWyZj_8nFLsYlGP-EWRoCjgIQAvD_BwE&tamanho=%5B46x64%20cm%5D">Kit 3 Quadro Decorativo Santa Ceia Discipulos</a></div>
+                        <div class="fs-13px">R$170,10</div>
+                    </div>
+                </div>
+                <div class="ps-3 text-center">
+                    <img src="~/img/product/americanas.jpg" alt="" height="40" class="ms-100 mh-100" />
+                </div>
+            </div>
+
+            <!-- produto-7 -->
+            <div class="d-flex align-items-center mb-3">
+                <div class="d-flex align-items-center justify-content-center me-3 width-50 height-50">
+                    <img src="~/img/product/produto-7.jpg" alt="" class="ms-100 mh-100" />
+                </div>
+                <div class="flex-grow-1">
+                    <div>
+                        <div class="text-dark font-weight-600"><a href="https://www.magazineluiza.com.br/cadeira-para-igreja-poltrona-e-cia-do-brasil/p/kc8dh65g5e/mo/otmo/?&seller_id=poltronaeciadobrasil">Cadeira para igreja - POLTRONA E CIA DO BRASIL</a></div>
+                        <div class="fs-13px">R$170,10</div>
+                    </div>
+                </div>
+                <div class="ps-3 text-center">
+                    <img src="~/img/product/magalu.png" alt="" height="40" class="ms-100 mh-100" />
+                </div>
+            </div>
+
+            <!-- produto-8 -->
+            <div class="d-flex align-items-center mb-3">
+                <div class="d-flex align-items-center justify-content-center me-3 width-50 height-50">
+                    <img src="~/img/product/produto-8.jpg" alt="" class="ms-100 mh-100" />
+                </div>
+                <div class="flex-grow-1">
+                    <div>
+                        <div class="text-dark font-weight-600"><a href="https://www.submarino.com.br/produto/1670562571?loja=570036000100&epar=bp_pl_00_go_g35186&epar=bp_pl_00_go_g35186&opn=XMLGOOGLE&WT.srch=1&acc=d47a04c6f99456bc289220d5d0ff208d&i=5eb24dbd49f937f62534714c&o=5ea349ddf8e95eac3d4838de&utm_medium=buscappc&utm_source=google&utm_campaign=marca%3Asuba%3Bmidia%3Abuscappc%3Bformato%3Apla%3Bsubformato%3A00%3Bidcampanha%3Ag35186&gclid=CjwKCAjw-ZCKBhBkEiwAM4qfF2Ge6MC8NCBdSu3hMpLKTlNfBVRDrjuIAuCR7LZmuh2R-V9PHxQ-dhoCQc4QAvD_BwE">Calice Dt Gravado Uva Em Cr 8,3x18,5cm 1112dt Lien</a></div>
+                        <div class="fs-13px">R$1.428,60</div>
+                    </div>
+                </div>
+                <div class="ps-3 text-center">
+                    <img src="~/img/product/submarino.png" alt="" height="40" class="ms-100 mh-100" />
+                </div>
+            </div>
+
+            <!-- produto-9 -->
+            <div class="d-flex align-items-center mb-3">
+                <div class="d-flex align-items-center justify-content-center me-3 width-50 height-50">
+                    <img src="~/img/product/produto-9.jpg" alt="" class="ms-100 mh-100" />
+                </div>
+                <div class="flex-grow-1">
+                    <div>
+                        <div class="text-dark font-weight-600"><a href="https://www.americanas.com.br/produto/5894217/livro-doutrina-e-teologia-de-umbanda-sagrada?opn=YSMESP&sellerid=23152466000370">Livro - Doutrina e Teologia de Umbanda Sagrada</a></div>
+                        <div class="fs-13px">R$34,94</div>
+                    </div>
+                </div>
+                <div class="ps-3 text-center">
+                    <img src="~/img/product/americanas.jpg" alt="" height="40" class="ms-100 mh-100" />
+                </div>
+            </div>
+
+            <!-- produto-10 -->
+            <div class="d-flex align-items-center mb-3">
+                <div class="d-flex align-items-center justify-content-center me-3 width-50 height-50">
+                    <img src="~/img/product/produto-10.jpg" alt="" class="ms-100 mh-100" />
+                </div>
+                <div class="flex-grow-1">
+                    <div>
+                        <div class="text-dark font-weight-600"><a href="https://www.amazon.com.br/Evangelho-Buda-Doutrina-Sidarta-Inspirador/dp/8531515963/ref=asc_df_8531515963/?tag=googleshopp00-20&linkCode=df0&hvadid=379738359817&hvpos=&hvnetw=g&hvrand=7097833164184441683&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001634&hvtargid=pla-837861633775&psc=1">O Evangelho de Buda: Vida e Doutrina de Sidarta Gautama</a></div>
+                        <div class="fs-13px">R$40,00</div>
+                    </div>
+                </div>
+                <div class="ps-3 text-center">
+                    <img src="~/img/product/amazon.png" alt="" height="40" class="ms-100 mh-100" />
+                </div>
+            </div>
+
+            <!-- produto-11 -->
+            <div class="d-flex align-items-center mb-3">
+                <div class="d-flex align-items-center justify-content-center me-3 width-50 height-50">
+                    <img src="~/img/product/produto-11.jpg" alt="" class="ms-100 mh-100" />
+                </div>
+                <div class="flex-grow-1">
+                    <div>
+                        <div class="text-dark font-weight-600"><a href="https://www.casasbahia.com.br/biblia-de-estudo-plenitude-ara-capa-preta-e-azul/p/11727398">Bíblia de Estudo Plenitude ARA - Capa Preta e Azul</a></div>
+                        <div class="fs-13px">R$145,61</div>
+                    </div>
+                </div>
+                <div class="ps-3 text-center">
+                    <img src="~/img/product/casasbahia.png" alt="" height="40" class="ms-100 mh-100" />
+                </div>
+            </div>
+
+            <!-- produto-12 -->
+        <div class="d-flex align-items-center mb-3">
+            <div class="d-flex align-items-center justify-content-center me-3 width-50 height-50">
+                <img src="~/img/product/produto-12.jpg" alt="" class="ms-100 mh-100" />
+            </div>
+            <div class="flex-grow-1">
+                <div>
+                    <div class="text-dark font-weight-600"><a href="https://www.americanas.com.br/produto/55705393?opn=YSMESP&sellerid=21556776000162">Microfone Sem Fio Duplo Ksr Pro 002d Ht</a></div>
+                    <div class="fs-13px">R$426,80</div>
+                </div>
+            </div>
+            <div class="ps-3 text-center">
+                <img src="~/img/product/americanas.jpg" alt="" height="40" class="ms-100 mh-100" />
+            </div>
+        </div>
+
+        <!-- produto-13 -->
+        <div class="d-flex align-items-center mb-3">
+            <div class="d-flex align-items-center justify-content-center me-3 width-50 height-50">
+                <img src="~/img/product/produto-13.jpg" alt="" class="ms-100 mh-100" />
+            </div>
+            <div class="flex-grow-1">
+                <div>
+                    <div class="text-dark font-weight-600"><a href="https://www.submarino.com.br/produto/2750011024?opn=XMLGOOGLE&sellerid=10755289000102">Suporte Estante Para Teclado Ask X10s</a></div>
+                    <div class="fs-13px">R$130,80</div>
+                </div>
+            </div>
+            <div class="ps-3 text-center">
+                <img src="~/img/product/submarino.png" alt="" height="40" class="ms-100 mh-100" />
+            </div>
+        </div>
+
+        <!-- produto-14 -->
+        <div class="d-flex align-items-center mb-3">
+            <div class="d-flex align-items-center justify-content-center me-3 width-50 height-50">
+                <img src="~/img/product/produto-14.jpg" alt="" class="ms-100 mh-100" />
+            </div>
+            <div class="flex-grow-1">
+                <div>
+                    <div class="text-dark font-weight-600"><a href="https://www.casasbahia.com.br/imagem-santo-expedito-resina-20cm-importado-1521156332/p/1521156332?utm_medium=Cpc&utm_source=google_freelisting&IdSku=1521156332&idLojista=12231">Imagem Santo Expedito Resina 20Cm Importado</a></div>
+                    <div class="fs-13px">R$79,90</div>
+                </div>
+            </div>
+            <div class="ps-3 text-center">
+                <img src="~/img/product/casasbahia.png" alt="" height="40" class="ms-100 mh-100" />
+            </div>
+        </div>
+        </div>
+        <!-- END card-body -->
+    </div>
+</div>
