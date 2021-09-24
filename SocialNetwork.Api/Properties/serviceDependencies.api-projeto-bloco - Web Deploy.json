@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "storage1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Storage/storageAccounts/apiprojetoblocostorage",
+      "type": "storage.azure",
+      "connectionId": "StorageAccount",
+      "secretStore": "AzureAppSettings"
+    }
+  }
+}

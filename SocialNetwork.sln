@@ -14,6 +14,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocialNetwork.Web", "SocialNetwork.Web\SocialNetwork.Web.csproj", "{20343042-918D-4A50-92E0-5A6CE67B5D66}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Presentation", "01 - Presentation", "{C48F4608-3A69-4A46-B0AC-0ACFF84D5804}"
+	ProjectSection(SolutionItems) = preProject
+		SocialNetwork.Web\sidebar.json = SocialNetwork.Web\sidebar.json
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Domain", "02 - Domain", "{975DA65C-616E-4E2D-B2AC-EA9640013213}"
 EndProject

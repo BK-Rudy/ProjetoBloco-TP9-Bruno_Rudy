@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using SocialNetwork.Data;
 using SocialNetwork.Data.Repositories;
 using SocialNetwork.Domain.Entities;
@@ -31,7 +30,7 @@ namespace SocialNetwork.Web
             services.AddScoped<IPostRepository, PostRepository>();
             services.AddScoped<IProfileRepository, ProfileRepository>();
 
-            services.AddDefaultIdentity<User>(options =>options.SignIn.RequireConfirmedAccount = true)
+            services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddControllersWithViews();
@@ -69,3 +68,4 @@ namespace SocialNetwork.Web
         }
     }
 }
+

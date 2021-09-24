@@ -4,10 +4,10 @@
   "parameters": {
     "resourceGroupName": {
       "type": "string",
-      "defaultValue": "rg-infnet-projeto-bloco-social-network",
+      "defaultValue": "rg-at-projeto-bloco",
       "metadata": {
         "_parameterType": "resourceGroup",
-        "description": "Name of the resource group for the resource. It is recommended to put resources under same resource group for better tracking."
+        "description": "Nome do grupo de recursos do recurso. É recomendável colocar os recursos no mesmo grupo de recursos para melhor acompanhamento."
       }
     },
     "resourceGroupLocation": {
@@ -15,7 +15,7 @@
       "defaultValue": "southcentralus",
       "metadata": {
         "_parameterType": "location",
-        "description": "Location of the resource group. Resource groups could have different location than resources."
+        "description": "Local do grupo de recursos. Os grupos de recursos podem ter um local diferente do local dos recursos."
       }
     },
     "resourceLocation": {
@@ -23,7 +23,7 @@
       "defaultValue": "[parameters('resourceGroupLocation')]",
       "metadata": {
         "_parameterType": "location",
-        "description": "Location of the resource. By default use resource group's location, unless the resource provider is not supported there."
+        "description": "Local do recurso. Por padrão, use o local do grupo de recursos, a menos que não haja suporte para o provedor de recursos."
       }
     }
   },
@@ -36,7 +36,7 @@
     },
     {
       "type": "Microsoft.Resources/deployments",
-      "name": "[concat(parameters('resourceGroupName'), 'Deployment', uniqueString(concat('stinfnetsocialnetwork', subscription().subscriptionId)))]",
+      "name": "[concat(parameters('resourceGroupName'), 'Deployment', uniqueString(concat('sqldb-at-projetobloco', subscription().subscriptionId)))]",
       "resourceGroup": "[parameters('resourceGroupName')]",
       "apiVersion": "2019-10-01",
       "dependsOn": [
@@ -49,15 +49,26 @@
           "contentVersion": "1.0.0.0",
           "resources": [
             {
-              "sku": {
-                "name": "Standard_LRS",
-                "tier": "Standard"
-              },
-              "kind": "Storage",
-              "name": "stinfnetsocialnetwork",
-              "type": "Microsoft.Storage/storageAccounts",
+              "kind": "v12.0",
               "location": "[parameters('resourceLocation')]",
-              "apiVersion": "2017-10-01"
+              "name": "sql-at-projetoblocodbserver",
+              "type": "Microsoft.Sql/servers",
+              "apiVersion": "2017-10-01-preview"
+            },
+            {
+              "sku": {
+                "name": "Standard",
+                "tier": "Standard",
+                "capacity": 10
+              },
+              "kind": "v12.0,user",
+              "location": "[parameters('resourceLocation')]",
+              "name": "sql-at-projetoblocodbserver/sqldb-at-projetobloco",
+              "type": "Microsoft.Sql/servers/databases",
+              "apiVersion": "2017-10-01-preview",
+              "dependsOn": [
+                "sql-at-projetoblocodbserver"
+              ]
             }
           ]
         }
@@ -65,6 +76,6 @@
     }
   ],
   "metadata": {
-    "_dependencyType": "storage.azure"
+    "_dependencyType": "mssql.azure"
   }
 }
